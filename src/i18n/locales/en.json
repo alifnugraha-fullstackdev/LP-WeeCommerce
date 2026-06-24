@@ -1,0 +1,114 @@
+{
+  "brand": {
+    "name": "WeeCommerce",
+    "tagline": "E-Commerce Systems, Powered by AI"
+  },
+  "nav": {
+    "why": "Why Us",
+    "services": "Services",
+    "work": "Our Work",
+    "faq": "FAQ",
+    "process": "How We Work",
+    "cta": "Get Started"
+  },
+  "lang": {
+    "id": "ID",
+    "en": "EN"
+  },
+  "hero": {
+    "eyebrow": "E-Commerce Systems, Powered by AI",
+    "title": "Your e-commerce should work for you. We make that happen.",
+    "subtitle": "We build e-commerce systems with integrated AI — not just websites. From marketplace dependency to your own scalable platform.",
+    "ctaPrimary": "Start a Project",
+    "ctaSecondary": "See NexaMart Demo"
+  },
+  "why": {
+    "label": "WHY WEECOMMERCE",
+    "title": "We build systems, not websites."
+  },
+  "process": {
+    "label": "HOW WE WORK",
+    "title": "From Discovery to Launch",
+    "subtitle": "Every engagement follows a structured process \u2014 reducing ambiguity, protecting your investment, and shipping clean systems on time."
+  },
+  "stats": {
+    "projects": "Projects Delivered",
+    "uptime": "System Uptime",
+    "loadTime": "Avg. Load Time",
+    "response": "Response Time"
+  },
+  "services": {
+    "hookLabel": "OUR SERVICES",
+    "hookTitle": "Two Ways to Work With Us",
+    "hookBuildTitle": "Path A — Build",
+    "hookBuildDesc": "For brands building from scratch or migrating off marketplaces.",
+    "hookIntegrateTitle": "Path B — Integrate",
+    "hookIntegrateDesc": "Already on Shopify or your own platform? Add the AI layer without a rebuild.",
+    "exploreBuild": "Explore Build",
+    "exploreIntegrate": "Explore Integrate",
+    "tabBuild": "Build",
+    "tabIntegrate": "Integrate",
+    "startingFrom": "Starting from",
+    "timelineLabel": "Timeline",
+    "featuresLabel": "What you get",
+    "mostPopular": "Most Popular",
+    "retainNote": "Ongoing maintenance available (Basic/Advanced). Contact us for retainer details.",
+    "ctaLaunch": "Start with LAUNCH",
+    "ctaConvert": "Start with CONVERT",
+    "ctaScale": "Start with SCALE",
+    "ctaModule": "Ask About This Module"
+  },
+  "work": {
+    "label": "OUR WORK",
+    "title": "NexaMart — AI-Powered E-Commerce Platform",
+    "subtitle": "Our flagship demonstration project — a fully functional e-commerce platform showcasing the complete WeeCommerce stack in production conditions.",
+    "cta": "Request Live Demo",
+    "demoLabel": "DEMO"
+  },
+  "faq": {
+    "label": "FAQ",
+    "title": "Frequently Asked Questions"
+  },
+  "cta": {
+    "label": "LET'S BUILD",
+    "title": "Let's Build Something That Works",
+    "subtitle": "Every project starts with a 30-minute conversation. No sales pitch — just us understanding your business and being honest about whether we're the right fit.",
+    "primary": "Chat via WhatsApp",
+    "secondary": "Send a Message"
+  },
+  "contact": {
+    "label": "CONTACT FORM",
+    "name": "Name",
+    "namePlaceholder": "Your full name",
+    "email": "Email",
+    "emailPlaceholder": "you@email.com",
+    "business": "Business / Brand Name",
+    "businessPlaceholder": "Your store or brand name",
+    "message": "Message",
+    "messagePlaceholder": "Tell us briefly about your project...",
+    "submit": "Send Message",
+    "sending": "Sending...",
+    "success": "Message sent! We respond within 24 business hours.",
+    "errors": {
+      "name": "Name is required",
+      "email": "A valid email is required",
+      "business": "Brand name is required",
+      "message": "Message is required"
+    }
+  },
+  "footer": {
+    "tagline": "E-Commerce Systems, Powered by AI",
+    "quickLinks": "Quick Links",
+    "contactTitle": "Contact",
+    "email": "Email",
+    "website": "Website",
+    "location": "Location",
+    "locationValue": "Indonesia — Remote-first, globally available",
+    "response": "Response within 24 business hours",
+    "copyright": "© 2026 WeeCommerce. All rights reserved."
+  },
+  "seo": {
+    "title": "WeeCommerce — Custom E-Commerce Systems Powered by AI",
+    "description": "We build e-commerce systems with integrated AI — not just websites. Custom storefronts, AI chatbots, RAG, and automation for brands ready to scale."
+  }
+}

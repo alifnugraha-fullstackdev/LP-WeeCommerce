@@ -1,0 +1,114 @@
+{
+  "brand": {
+    "name": "WeeCommerce",
+    "tagline": "E-Commerce Systems, Powered by AI"
+  },
+  "nav": {
+    "why": "Kenapa Kami",
+    "services": "Layanan",
+    "work": "Karya Kami",
+    "faq": "FAQ",
+    "process": "Cara Kerja",
+    "cta": "Mulai Konsultasi"
+  },
+  "lang": {
+    "id": "ID",
+    "en": "EN"
+  },
+  "hero": {
+    "eyebrow": "E-Commerce Systems, Powered by AI",
+    "title": "Toko online lo harusnya kerja keras, bukan lo.",
+    "subtitle": "Kami bangun sistem e-commerce dengan AI terintegrasi — bukan sekadar website. Dari marketplace dependency ke platform sendiri yang scale.",
+    "ctaPrimary": "Mulai Konsultasi",
+    "ctaSecondary": "Lihat Demo NexaMart"
+  },
+  "why": {
+    "label": "KENAPA WEECOMMERCE",
+    "title": "Kami bangun sistem, bukan website."
+  },
+  "process": {
+    "label": "CARA KERJA",
+    "title": "Dari Discovery Sampai Launch",
+    "subtitle": "Setiap project mengikuti proses terstruktur \u2014 mengurangi ambiguitas, melindungi investasi lo, dan deliver sistem yang bersih tepat waktu."
+  },
+  "stats": {
+    "projects": "Project Delivered",
+    "uptime": "System Uptime",
+    "loadTime": "Avg. Load Time",
+    "response": "Response Time"
+  },
+  "services": {
+    "hookLabel": "LAYANAN KAMI",
+    "hookTitle": "Dua Jalur Kerja Sama",
+    "hookBuildTitle": "Jalur A — Build",
+    "hookBuildDesc": "Untuk brand yang bangun dari nol atau migrasi dari marketplace.",
+    "hookIntegrateTitle": "Jalur B — Integrate",
+    "hookIntegrateDesc": "Udah punya Shopify atau platform sendiri? Tambahkan layer AI tanpa rebuild.",
+    "exploreBuild": "Lihat Build",
+    "exploreIntegrate": "Lihat Integrate",
+    "tabBuild": "Build",
+    "tabIntegrate": "Integrate",
+    "startingFrom": "Mulai dari",
+    "timelineLabel": "Timeline",
+    "featuresLabel": "Yang lo dapet",
+    "mostPopular": "Paling Populer",
+    "retainNote": "Ada ongoing maintenance (Basic/Advanced). Hubungi kami untuk detail retainer.",
+    "ctaLaunch": "Mulai dari LAUNCH",
+    "ctaConvert": "Mulai dari CONVERT",
+    "ctaScale": "Mulai dari SCALE",
+    "ctaModule": "Tanya Modul Ini"
+  },
+  "work": {
+    "label": "KARYA KAMI",
+    "title": "NexaMart — Platform E-Commerce AI",
+    "subtitle": "Project demo unggulan kami — platform e-commerce fungsional yang showcase complete WeeCommerce stack dalam kondisi production.",
+    "cta": "Request Live Demo",
+    "demoLabel": "DEMO"
+  },
+  "faq": {
+    "label": "FAQ",
+    "title": "Pertanyaan yang Sering Ditanyain"
+  },
+  "cta": {
+    "label": "MARI BANGUN",
+    "title": "Mari Bangun Sesuatu yang Bekerja",
+    "subtitle": "Setiap project dimulai dengan obrolan 30 menit. Nggak ada sales pitch — cuma kami yang pahamin bisnis lo dan jujur soal apakah kami fit yang tepat.",
+    "primary": "Chat via WhatsApp",
+    "secondary": "Kirim Pesan"
+  },
+  "contact": {
+    "label": "FORM KONTAK",
+    "name": "Nama",
+    "namePlaceholder": "Nama lengkap lo",
+    "email": "Email",
+    "emailPlaceholder": "kamu@email.com",
+    "business": "Nama Brand / Bisnis",
+    "businessPlaceholder": "Nama toko atau brand lo",
+    "message": "Pesan",
+    "messagePlaceholder": "Ceritain singkat soal project lo...",
+    "submit": "Kirim Pesan",
+    "sending": "Mengirim...",
+    "success": "Pesan terkirim! Kami respon dalam 24 jam kerja.",
+    "errors": {
+      "name": "Nama wajib diisi",
+      "email": "Email valid wajib diisi",
+      "business": "Nama brand wajib diisi",
+      "message": "Pesan wajib diisi"
+    }
+  },
+  "footer": {
+    "tagline": "E-Commerce Systems, Powered by AI",
+    "quickLinks": "Tautan",
+    "contactTitle": "Kontak",
+    "email": "Email",
+    "website": "Website",
+    "location": "Lokasi",
+    "locationValue": "Indonesia — Remote-first, globally available",
+    "response": "Respon dalam 24 jam kerja",
+    "copyright": "© 2026 WeeCommerce. Hak cipta dilindungi."
+  },
+  "seo": {
+    "title": "WeeCommerce — Jasa Pembuatan Sistem E-Commerce Custom & AI",
+    "description": "Kami bangun sistem e-commerce dengan AI terintegrasi — bukan sekadar website. Custom storefront, AI chatbot, RAG, dan automation untuk brand yang siap scale."
+  }
+}
