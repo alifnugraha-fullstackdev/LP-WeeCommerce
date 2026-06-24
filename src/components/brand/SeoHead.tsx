@@ -30,7 +30,7 @@ export function SeoHead() {
               '@type': 'Organization',
               name: 'WeeCommerce',
               url: 'https://weecommerce.id',
-              email: 'hello@weecommerce.id',
+              email: 'alifnugraha.studio@gmail.com',
               description: 'E-Commerce Systems, Powered by AI',
               areaServed: 'Worldwide',
               knowsAbout: ['E-commerce', 'AI Chatbot', 'RAG', 'n8n Automation'],

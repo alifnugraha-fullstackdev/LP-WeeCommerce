@@ -25,6 +25,7 @@ export function ContactForm({ open }: { open: boolean }) {
   })
   const [errors, setErrors] = useState<Errors>({})
   const [submitted, setSubmitted] = useState(false)
+  const [sending, setSending] = useState(false)
 
   const validate = (vals: FormState): Errors => {
     const errs: Errors = {}
@@ -42,22 +43,42 @@ export function ContactForm({ open }: { open: boolean }) {
     if (errors[field]) setErrors((prev) => ({ ...prev, [field]: undefined }))
   }
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault()
     const errs = validate(values)
     setErrors(errs)
     if (Object.keys(errs).length > 0) return
 
-    // No backend — fall back to opening email client with prefilled body
-    const subject = encodeURIComponent(
-      `Project Inquiry — ${values.business} (${values.name})`,
-    )
-    const body = encodeURIComponent(
-      `${values.message}\n\n— ${values.name}\n${values.email}\n${values.business}`,
-    )
-    window.location.href = `mailto:hello@weecommerce.id?subject=${subject}&body=${body}`
+    setSending(true)
 
-    setSubmitted(true)
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(values)
+      })
+
+      const result = await response.json()
+      if (result.success) {
+        setSubmitted(true)
+      } else {
+        throw new Error(result.message)
+      }
+    } catch (err) {
+      console.warn('API form submission failed, opening email client fallback:', err)
+      const subject = encodeURIComponent(
+        `Project Inquiry — ${values.business} (${values.name})`,
+      )
+      const body = encodeURIComponent(
+        `${values.message}\n\n— ${values.name}\n${values.email}\n${values.business}`,
+      )
+      window.location.href = `mailto:alifnugraha.studio@gmail.com?subject=${subject}&body=${body}`
+      setSubmitted(true)
+    } finally {
+      setSending(false)
+    }
   }
 
   if (submitted) {
@@ -146,8 +167,8 @@ export function ContactForm({ open }: { open: boolean }) {
           {errors.message && <p id="message-error" className="mt-1 text-[12px] text-[var(--color-error)]">{errors.message}</p>}
         </div>
 
-        <Button type="submit" size="lg" className="w-full sm:w-auto">
-          {t('contact.submit')}
+        <Button type="submit" size="lg" disabled={sending} className="w-full sm:w-auto">
+          {sending ? t('contact.sending') : t('contact.submit')}
         </Button>
       </form>
     </div>

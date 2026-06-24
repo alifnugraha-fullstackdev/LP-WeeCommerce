@@ -53,11 +53,11 @@ export function SiteFooter() {
             <ul className="flex flex-col gap-3 text-[14px] text-[var(--color-body)]">
               <li>
                 <a
-                  href="mailto:hello@weecommerce.id"
+                  href="mailto:alifnugraha.studio@gmail.com"
                   className="inline-flex items-center gap-2 hover:text-[var(--color-ink)] transition-colors"
                 >
                   <Mail className="h-4 w-4 text-[var(--color-muted)]" />
-                  hello@weecommerce.id
+                  alifnugraha.studio@gmail.com
                 </a>
               </li>
               <li className="inline-flex items-center gap-2">
