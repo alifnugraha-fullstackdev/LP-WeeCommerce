@@ -4,7 +4,6 @@ import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Check, ArrowRight } from '@/components/icons'
 import { buildTiers, integrateModules } from '@/data/services'
-import { pickLocalized, type Lang } from '@/lib/localized'
 import { WHATSAPP_LINK } from '@/lib/whatsapp'
 import { useScrollReveal } from '@/lib/useScrollReveal'
 import { cn } from '@/lib/utils'
@@ -12,8 +11,7 @@ import { cn } from '@/lib/utils'
 type Tab = 'build' | 'integrate'
 
 export function ServicesSection() {
-  const { t, i18n } = useTranslation()
-  const lang = (i18n.language?.startsWith('en') ? 'en' : 'id') as Lang
+  const { t } = useTranslation()
   const [tab, setTab] = useState<Tab>('build')
   const ref = useScrollReveal<HTMLElement>()
 
@@ -107,38 +105,38 @@ export function ServicesSection() {
                   )}
                 >
                   <div className="flex items-center justify-between mb-4">
-                    <h3 className="text-pricing-card-title">{tier.name}</h3>
+                    <h3 className="text-pricing-card-title">{t(tier.nameKey)}</h3>
                     {tier.featured && <Badge variant="featured">{t('services.mostPopular')}</Badge>}
                   </div>
                   <p className="text-body text-[var(--color-muted)] mb-6 min-h-[40px] leading-relaxed">
-                    {pickLocalized(tier.tagline, lang)}
+                    {t(tier.taglineKey)}
                   </p>
 
                   <div className="mb-1 text-[12px] uppercase tracking-wide text-[var(--color-muted)]">
                     {t('services.startingFrom')}
                   </div>
                   <div className="flex items-baseline gap-2 mb-6">
-                    <span className="text-pricing-display">{tier.priceIdr}</span>
-                    <span className="text-[14px] text-[var(--color-muted)]">/ {tier.priceUsd}</span>
+                    <span className="text-pricing-display">{t(tier.priceIdrKey)}</span>
+                    <span className="text-[14px] text-[var(--color-muted)]">/ {t(tier.priceUsdKey)}</span>
                   </div>
 
                   <div className="text-[13px] text-[var(--color-muted)] mb-6 flex items-center gap-2">
                     <span className="inline-block h-1.5 w-1.5 rounded-full bg-[var(--color-signature-coral)]" />
-                    {pickLocalized(tier.timeline, lang)}
+                    {t(tier.timelineKey)}
                   </div>
 
                   <ul className="flex flex-col gap-3 mb-8 flex-1">
-                    {tier.features.map((feature, idx) => (
+                    {tier.featuresKeys.map((featureKey, idx) => (
                       <li key={idx} className="flex items-start gap-2 text-[14px] text-[var(--color-body)]">
                         <Check className="h-4 w-4 mt-0.5 shrink-0 text-[var(--color-ink)]" />
-                        {pickLocalized(feature, lang)}
+                        {t(featureKey)}
                       </li>
                     ))}
                   </ul>
 
-                  {tier.note && (
+                  {tier.noteKey && t(tier.noteKey) && (
                     <p className="text-[13px] text-[var(--color-muted)] italic mb-6">
-                      {pickLocalized(tier.note, lang)}
+                      {t(tier.noteKey)}
                     </p>
                   )}
 
@@ -175,17 +173,17 @@ export function ServicesSection() {
                       {t('services.mostPopular')}
                     </Badge>
                   )}
-                  <h3 className="text-pricing-card-title mb-3">{mod.name}</h3>
+                  <h3 className="text-pricing-card-title mb-3">{t(mod.nameKey)}</h3>
                   <p className="text-body text-[var(--color-muted)] mb-6 leading-relaxed flex-1">
-                    {pickLocalized(mod.description, lang)}
+                    {t(mod.descriptionKey)}
                   </p>
 
                   <div className="mb-1 text-[12px] uppercase tracking-wide text-[var(--color-muted)]">
                     {t('services.startingFrom')}
                   </div>
                   <div className="flex items-baseline gap-2 mb-6">
-                    <span className="text-pricing-display text-[24px]">{mod.priceIdr}</span>
-                    <span className="text-[14px] text-[var(--color-muted)]">/ {mod.priceUsd}</span>
+                    <span className="text-pricing-display text-[24px]">{t(mod.priceIdrKey)}</span>
+                    <span className="text-[14px] text-[var(--color-muted)]">/ {t(mod.priceUsdKey)}</span>
                   </div>
 
                   <Button asChild variant="pricing" className="mt-auto self-start">

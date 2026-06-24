@@ -56,7 +56,71 @@
     "ctaLaunch": "Start with LAUNCH",
     "ctaConvert": "Start with CONVERT",
     "ctaScale": "Start with SCALE",
-    "ctaModule": "Ask About This Module"
+    "ctaModule": "Ask About This Module",
+    "tiers": {
+      "launch": {
+        "name": "LAUNCH",
+        "tagline": "Own your platform. Stop depending on marketplaces.",
+        "priceIdr": "Rp 18 million",
+        "priceUsd": "$1,000",
+        "timeline": "4–6 weeks",
+        "note": "AI layer not included",
+        "f1": "Custom storefront (Next.js + Supabase)",
+        "f2": "Payment gateway (Midtrans / Stripe)",
+        "f3": "Shipping integration + admin dashboard",
+        "f4": "Mobile responsive + basic SEO"
+      },
+      "convert": {
+        "name": "CONVERT",
+        "tagline": "Your store runs. Now let AI do the heavy lifting.",
+        "priceIdr": "Rp 35 million",
+        "priceUsd": "$2,000",
+        "timeline": "7–10 weeks",
+        "note": "",
+        "f1": "Everything in LAUNCH",
+        "f2": "AI Customer Service Chatbot",
+        "f3": "RAG Knowledge Base",
+        "f4": "Basic n8n Automation"
+      },
+      "scale": {
+        "name": "SCALE",
+        "tagline": "A system that grows with your business — without adding headcount.",
+        "priceIdr": "Rp 50 million",
+        "priceUsd": "$2,800",
+        "timeline": "10–16 weeks",
+        "note": "",
+        "f1": "Everything in CONVERT",
+        "f2": "Advanced n8n Suite + AI Analytics",
+        "f3": "WhatsApp Business API integration",
+        "f4": "Performance optimization (Core Web Vitals)"
+      }
+    },
+    "modules": {
+      "chatbot": {
+        "name": "AI Chatbot",
+        "description": "Setup + training on your products & FAQ. 24/7 CS without hiring.",
+        "priceIdr": "Rp 8–15 million",
+        "priceUsd": "$1,200–$2,500"
+      },
+      "rag": {
+        "name": "RAG System",
+        "description": "Dynamic knowledge base from your product catalog. Contextual, accurate, scalable.",
+        "priceIdr": "Rp 10–18 million",
+        "priceUsd": "$1,500–$3,000"
+      },
+      "n8n": {
+        "name": "n8n Automation",
+        "description": "3–5 custom workflows: order, CRM, email, inventory alerts.",
+        "priceIdr": "Rp 8–15 million",
+        "priceUsd": "$1,200–$2,500"
+      },
+      "fullSuite": {
+        "name": "Full AI Suite",
+        "description": "All modules above — bundled. The complete intelligence layer.",
+        "priceIdr": "Rp 22–40 million",
+        "priceUsd": "$3,500–$6,500"
+      }
+    }
   },
   "work": {
     "label": "OUR WORK",

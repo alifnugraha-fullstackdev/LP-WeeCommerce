@@ -142,18 +142,40 @@ export function AdminDashboard() {
     })
   }
 
-  // Save changes locally
-  const handleSave = () => {
+  // Save changes locally and to the backend server
+  const handleSave = async () => {
     const currentBundle = translations[currentLang]
     
-    // Save to LocalStorage
-    localStorage.setItem(`weecommerce_cms_${currentLang}`, JSON.stringify(currentBundle))
+    try {
+      const response = await fetch('/api/save-translations', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          lang: currentLang,
+          data: currentBundle
+        })
+      })
 
-    // Inject into i18n
+      const result = await response.json()
+      if (result.success) {
+        // Clear local override so the app loads directly from the newly saved disk file on next reload
+        localStorage.removeItem(`weecommerce_cms_${currentLang}`)
+        triggerToast(`Konten [${currentLang.toUpperCase()}] berhasil ditulis ke berkas lokal proyek & diterapkan!`)
+      } else {
+        throw new Error(result.message)
+      }
+    } catch (err) {
+      console.warn('Backend save unavailable, falling back to LocalStorage:', err)
+      // Fallback: Save to LocalStorage
+      localStorage.setItem(`weecommerce_cms_${currentLang}`, JSON.stringify(currentBundle))
+      triggerToast(`Perubahan [${currentLang.toUpperCase()}] disimpan di browser (mode statis/tidak ada server).`)
+    }
+
+    // Inject changes in-memory immediately for live preview
     i18n.addResourceBundle(currentLang, 'translation', currentBundle, true, true)
     i18n.changeLanguage(i18n.language)
-
-    triggerToast(`Konten [${currentLang.toUpperCase()}] berhasil disimpan & diterapkan secara live!`)
   }
 
   // Reset to default
