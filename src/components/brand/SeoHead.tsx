@@ -20,8 +20,8 @@ export function SeoHead() {
       <meta property="og:title" content={t('seo.title')} />
       <meta property="og:description" content={t('seo.description')} />
       <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://weecommerce.id" />
-      <link rel="canonical" href="https://weecommerce.id" />
+      <meta property="og:url" content="https://weecommerce.weecommers.workers.dev" />
+      <link rel="canonical" href="https://weecommerce.weecommers.workers.dev" />
       <script type="application/ld+json">
         {JSON.stringify({
           '@context': 'https://schema.org',
@@ -29,7 +29,7 @@ export function SeoHead() {
             {
               '@type': 'Organization',
               name: 'WeeCommerce',
-              url: 'https://weecommerce.id',
+              url: 'https://weecommerce.weecommers.workers.dev',
               email: 'alifnugraha.studio@gmail.com',
               description: 'E-Commerce Systems, Powered by AI',
               areaServed: 'Worldwide',
@@ -38,7 +38,7 @@ export function SeoHead() {
             {
               '@type': 'WebSite',
               name: 'WeeCommerce',
-              url: 'https://weecommerce.id',
+              url: 'https://weecommerce.weecommers.workers.dev',
             },
             {
               '@type': 'FAQPage',

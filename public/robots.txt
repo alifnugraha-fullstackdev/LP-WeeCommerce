@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://weecommerce.id/sitemap.xml
+Sitemap: https://weecommerce.weecommers.workers.dev/sitemap.xml
