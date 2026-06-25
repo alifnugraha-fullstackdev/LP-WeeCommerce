@@ -4,6 +4,8 @@ import tailwindcss from '@tailwindcss/vite'
 import path from 'path'
 import { promises as fs } from 'fs'
 
+import { cloudflare } from "@cloudflare/vite-plugin";
+
 // Custom Vite server plugin to save translations directly to disk in local development
 function translationApiPlugin() {
   return {
@@ -57,7 +59,7 @@ function translationApiPlugin() {
 }
 
 export default defineConfig({
-  plugins: [react(), tailwindcss(), translationApiPlugin()],
+  plugins: [react(), tailwindcss(), translationApiPlugin(), cloudflare()],
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
